@@ -1,0 +1,17 @@
+.App{
+    /* background-color:  #22201c;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+.template-intro a{
+    color: rgb(31, 185, 185);
+}
+.template-intro a:hover{
+    color: teal;
+    text-decoration: underline;
+}

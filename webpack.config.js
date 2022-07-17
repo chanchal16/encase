@@ -1,5 +1,4 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
 const path = require('path')
 
 var mode = process.env.NODE_ENV || 'production';
@@ -44,10 +43,6 @@ module.exports = {
       template: "./public/index.html",
       filename: "./index.html"
     }),
-    new CompressionPlugin({
-      test: /.(js|jsx|css|html|svg|png|jpg|jpeg)$/,
-      deleteOriginalAssets: true,
-    })
   ],
   output: {
     filename: '[name].[contenthash].bundle.js',
